@@ -1,0 +1,14 @@
+.loader-square-icon {padding: 10px 7px; width: 100%; border: unset; background: var(--white-opaque); transition: all ease 1s; width: 100%;}
+.loader-square-icon span { font-family: var(--roboto-mono); color: var(--navy); text-transform: uppercase;}
+.downsell-nav {opacity: 0; z-index: 9999999; padding: 5px 10px; border-radius: 5px; background: var(--navy); min-height: 62px;}
+
+.loader-square {margin: 5px 5px 5px 0}
+.loader-square-link {padding: 20px 20px;}
+.downsell-nav-container {position: sticky; top: 0;}
+.active-downsell-link {background-color: var(--white)}
+
+.icon-logo-wrapper { height: 50px; margin: 10px;}
+
+
+/* SocialProof Content */
+.character-message {border: 2px solid white; color: black; background: var(--white-opaque); padding: 15px; width: 110%;  z-index: 10;}
