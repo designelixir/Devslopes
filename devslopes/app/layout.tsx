@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import "./globals.css";
-import Navigation from "./components/Navigation";
 import gsap from "gsap";
 
 

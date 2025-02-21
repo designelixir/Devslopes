@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
@@ -18,9 +18,8 @@ export default function Loader() {
   
   const navRef = useRef<HTMLElement>(null);
   const loaderSquaresRef = useRef<HTMLDivElement>(null);
-  const meteorRef = useRef<HTMLDivElement>(null);
 
-  const [activeSection, setActiveSection] = useState("");
+  
 
   useEffect(() => {
     // Create a GSAP timeline for better control and readability
@@ -126,13 +125,13 @@ export default function Loader() {
   
   return (
     <div className="downsell-nav-container">
-      <div className="flex-end-center offblack1-bg s-basic-padding icon-logo-wrapper" ref={imageRef}>
-      <Image className="hover" src="/Devslopes-Logo-Icon-WhiteOutline.svg" alt="Devslopes Icon Logo" layout="fill" objectFit="contain"/>
-      </div>
       <nav className="flex-start-start flex-column downsell-nav downsell-nav-container s-basic-margin-left-right" ref={navRef}>
         <div className="flex-center-start full-width" ref={loaderSquaresRef}>
+        <div className="s-basic-padding icon-logo-wrapper" ref={imageRef}>
+        <Image className="hover" src="/Devslopes-Logo-Icon-WhiteOutline.svg" alt="Devslopes Icon Logo" layout="fill" objectFit="contain"/>
+        </div>
           {Sections.map((section) => (
-            <Link key={section.link} id={`${section.link}-Link`} href={`#${section.link}`} className={`flex-center-center full-width no-link-styling downsell-nav-link loader-square flex-center-start ${ activeSection === section.link ? "active-downsell-nav-link": ""}`}>                
+            <Link key={section.link} id={`${section.link}-Link`} href={`#${section.link}`} className={`flex-center-center full-width no-link-styling downsell-nav-link loader-square flex-center-start `}>                
             </Link>
           ))}
         </div>

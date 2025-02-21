@@ -9,7 +9,7 @@ export default function Stars() {
     document.body.appendChild(canvas);
 
     const ctx = canvas.getContext("2d");
-    let particlesArray: Particle[] = [];
+    const particlesArray: Particle[] = [];
 
     // Set canvas dimensions
     canvas.width = window.innerWidth;
