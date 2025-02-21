@@ -5,6 +5,7 @@ import SocialProofContent from "../components/Section2-SocialProof/SocialProofCo
 import Loader2 from "../components/Section-1Hero/Loader2";
 import John from "../components/Section2-SocialProof/John";
 import WorkHarder from "../components/Section2-SocialProof/WorkHarder";
+import MeetNathan from "../components/Section3-WhyDevslopes/MeetNathan";
 
 
 
@@ -21,9 +22,9 @@ export default function DownsellPage() {
       <SocialProofContent></SocialProofContent>
       <WorkHarder></WorkHarder>
     </section>
-    {/* <section id="WhyDevslopes">
+    <section id="WhyDevslopes">
       <MeetNathan></MeetNathan>
-    </section> */}
+    </section>
     </>
     
     
