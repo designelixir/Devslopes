@@ -15,7 +15,7 @@ export default function Feedback({ message, name, image, color }: FeedbackProps)
             {name && (
                 
                 
-                <strong style={{color: 'black', marginTop: '15px'}}>{name}</strong>
+                <p className="no-text-spacing centered-text"><strong style={{color: `var(--${color})`, marginTop: '15px'}}>{name}</strong></p>
                 
             )}
             <p className="feedback-message" ><i>{message}</i></p>

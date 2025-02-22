@@ -7,6 +7,7 @@ import Loader from "../components/DownsellPage/Loader";
 import Hero from "../components/DownsellPage/Hero";
 import TheProblem from "../components/DownsellPage/TheProblem";
 import OneOpportunity from "../components/DownsellPage/OneOpportunity";
+import CantGoAlone from "../components/DownsellPage/CantGoAlone";
 
 
 
@@ -28,6 +29,7 @@ export default function DownsellPage() {
     <section id="WhyDevslopes">
       <MeetNathan></MeetNathan>
       <MeetDevslopes></MeetDevslopes>
+      <CantGoAlone></CantGoAlone>
     </section>
     <section id="BizOp" ></section>
     </main>
