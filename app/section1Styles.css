@@ -12,21 +12,35 @@
 
 /* SocialProof Content */
 .active-downsell-link {background-color: var(--white)}
-.character-message {border: 2px solid white; color: black; background: var(--white-opaque); padding: 15px; width: 110%;  z-index: 10;}
-.box-section { border-radius: 10px; background: var(--navy); }
+.box-section { border-radius: 10px; background: var(--navy); max-width: 85vw; }
 .box-section-aqua {border: 2px solid aqua; box-shadow: 4px 4px 0 aqua;}
-.character-image {height: 30vh; width: 20vw; background-position: center 100%; background-repeat: no-repeat; background-size: contain;}
-.jon {background-image: url('/DownsellPage/jon.svg')}
+.box-section-pink {border: 2px solid var(--pink); box-shadow: 4px 4px 0 var(--pink);}
+.character-image { width: 30vw; height: 250px; background-position: center 100%; background-repeat: no-repeat; background-size: contain; margin: 0 -15px -15px 0;}
+.character-message-wrapper {height: calc(100% - 25px); }
+.dash-and-text-container {height: 100%;  min-height: 250px;}
+.dash-container {height: 25px; } 
 
+.jon {background-image: url('/DownsellPage/jon.svg'); }
+.nathan {background-image: url('/DownsellPage/nathan.svg'); }
+.outline {background-image: url('/DownsellPage/outline.svg');}
+
+@media screen and (max-width: 650px) {
+  .dash-and-text-container {min-height: unset; border: 1px solid red;}
+  .character-image {height: 200px;}
+  .character-card-text * {text-align: center;}
+}
 
 /* Loader 2 */
-.downsell-nav-container {backdrop-filter: blur(10px);  position: sticky; top: 0; z-index: 100;}
-.downsell-nav {transition: all 1s ease; padding: 10px; border-radius: 5px; margin: 1.5vw 4vw;}
-.loader-square {display: none; opacity: 0; padding: 10px; background: var(--white-opaque); margin: 0 5px;  height: 40px; max-height: 40px; border-radius: 2px;}
+#scrollNav {padding: 5px; margin-left: 5px;}
+.downsell-nav-container {backdrop-filter: blur(10px);  position: fixed; top: 0; z-index: 100;}
+.downsell-nav {transition: all 1s ease; padding: 5px; border-radius: 5px; margin: 1.5vw 4vw;}
+.downsell-nav-link {transition: all 1s ease;}
+.loader-square {display: none; opacity: 0;  margin: 0 5px;  height: 40px; max-height: 40px; border-radius: 2px;}
+.loader-squares-wrapper{ width: calc(100vw - 50px);}
 .icon-logo-wrapper {opacity: 0;}
 .icon-logo-wrapper {height: 50px; max-height: 50px; max-width: 60px!important; margin-right: 10px; background-image: url('/Devslopes-Logo-Icon-WhiteOutline.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;}
-.loader-square-text {opacity: 0; background: transparent; font-family: var(--roboto-mono); text-transform: uppercase; color: black; border: unset;}
-
+.loader-square-text {border: unset; background: unset; width: 100%; min-width: 180px; max-height: 40px; font-family: var(--roboto-mono); text-transform: uppercase; color: black;  }
+.loader-square-text:hover {border: unset; font-weight: 700;}
 .section-2-sticky-title {position: sticky; top: 100;}
 .phase-message {
     position: absolute;
@@ -38,8 +52,6 @@
   }
   
 .sun-burst {min-height: 450px; width: 450px; margin-top: 50px;}
-.sun-rotate-center{-webkit-animation:rotate-center 20s linear infinite both;animation:rotate-center 20s linear infinite both}
- @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 
  .fade-out-message {position: absolute;}
  

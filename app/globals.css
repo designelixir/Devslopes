@@ -13,7 +13,17 @@ body {width: 100%; margin: 0px; z-index: 1;}
     --pink-opaque: rgba(219, 82, 82, 0.6);
     --white: rgba(255,255,255,1);
     --white-opaque: rgba(255,255,255,0.6);
-    --yellow: #d5d271;
+    --white-opaque-2: rgba(255,255,255,0.1);
+    --yellow: #f8d962;
+    --deep-purple: #291451;
+  --magenta: #9d2e64;
+  --blue: #4069d4;
+  --orange: #ef8751;
+  --aqua: aqua;
+  
+  --white: #fdf6f7;
+  --cyan: #78e3e9;
+  --dark-gray: #262626;
     --navy: #1d1224;
     --offblack1: #000000;
     --offblack2: #141414;
@@ -26,6 +36,36 @@ body {width: 100%; margin: 0px; z-index: 1;}
 
 .pink-text {color: var(--pink);}
 .yellow-text {color: var(--yellow);}
+.aqua-text {color: aqua;}
+/* Deep Purple */
+.deep-purple-text { color: var(--deep-purple); }
+.box-section-deep-purple { border: 2px solid var(--deep-purple); box-shadow: 4px 4px 0 var(--deep-purple); }
+
+/* Magenta */
+.magenta-text { color: var(--magenta); }
+.box-section-magenta { border: 2px solid var(--magenta); box-shadow: 4px 4px 0 var(--magenta); }
+
+/* Blue */
+.blue-text { color: var(--blue); }
+.box-section-blue { border: 2px solid var(--blue); box-shadow: 4px 4px 0 var(--blue); }
+
+/* Orange */
+.orange-text { color: var(--orange); }
+.box-section-orange { border: 2px solid var(--orange); box-shadow: 4px 4px 0 var(--orange); }
+
+/* Yellow */
+.yellow-text { color: var(--yellow); }
+.box-section-yellow { border: 2px solid var(--yellow); box-shadow: 4px 4px 0 var(--yellow); }
+
+/* White */
+.white-text { color: var(--white); }
+.box-section-white { border: 2px solid var(--white); box-shadow: 4px 4px 0 var(--white); }
+
+/* Cyan */
+.cyan-text { color: var(--cyan); }
+.box-section-cyan { border: 2px solid var(--cyan); box-shadow: 4px 4px 0 var(--cyan); }
+
+
 
 .flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
 .flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
@@ -51,8 +91,8 @@ body {width: 100%; margin: 0px; z-index: 1;}
 .no-flex-grow {flex: unset;}
 .full-width {width: 100%!important;}
 
-.hidden-scrollbar {scrollbar-width: none; /* Firefox */ -ms-overflow-style: none; /* Internet Explorer 10+ */}
-.hidden-scrollbar::-webkit-scrollbar {display: none; /* Chrome, Safari, and Edge */}
+.hide-scrollbars {scrollbar-width: none; /* Firefox */ -ms-overflow-style: none; /* Internet Explorer 10+ */}
+.hide-scrollbars::-webkit-scrollbar {display: none; /* Chrome, Safari, and Edge */}
 
 .offblack2-bg {background: var(--offblack2); color: white;}
 .offblack1-bg {background: var(--offblack1); color: white;}
@@ -64,6 +104,7 @@ body {width: 100%; margin: 0px; z-index: 1;}
 .basic-margin {margin: 5vw;}
 .basic-margin-left-right {margin: 0 5vw;}
 .basic-margin-top-bottom {margin: 5vw 0;}
+.basic-margin-top {margin-top: 5vw;}
 
 .s-basic-padding {padding: 2.5vw;}
 .s-basic-padding-left-right {padding: 0 2.5vw;}
@@ -77,8 +118,9 @@ h1 {font-size: clamp(48px, 2vw + 1.2rem, 72px); font-family: var(--archivo); fon
 h2 {font-size: clamp(32px, 1vw + 0.8rem, 62px); font-weight: 300;}
 h3 { font-family: var(--archivo); font-weight: 500; }
 h6 {font-size: 16px; line-height: 18px; padding: 0; margin: 0; text-transform: uppercase; font-family: var(--roboto-mono); font-weight: 300}
-p {font-family: var(--archivo); font-size: 18px; line-height: 22px;}
+p {font-family: var(--archivo); font-size: 18px; line-height: 22px; font-weight: 200}
 strong {font-weight: 700;}
+.bold {font-weight: 700}
 a {color: inherit;}
 
 .font-l {font-size: 32px; line-height: 36px;}
@@ -87,8 +129,12 @@ a {color: inherit;}
 button {background: var(--pink); border: 2px solid var(--pink); color: white; padding: 10px 20px; border-radius: 2px;}
 button:hover {cursor: pointer; border: 2px solid white;}
 
+.call-to-action-button {font-family: var(--roboto-mono); font-size: 24px; text-transform: uppercase;}
+
 .no-link-styling {text-decoration: unset;}
 .centered-text {text-align: center;}
+.right-text {text-align: right;}
+.no-text-spacing {margin: 0; padding: 0;}
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 .hover {cursor: pointer;}

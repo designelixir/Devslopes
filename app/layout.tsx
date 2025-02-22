@@ -1,7 +1,5 @@
 "use client";
-import { useEffect } from "react";
 import "./globals.css";
-import gsap from "gsap";
 
 
 export default function RootLayout({
@@ -9,20 +7,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".gsap");
-    gsap.fromTo(
-      elements,
-      { opacity: 0, y: 20 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        stagger: 0.2,
-      }
-    );
-  }, []);
 
   return (
     <html lang="en">

@@ -13,6 +13,7 @@ export default function Dash({ filled, color, height = 8.226 }: DashProps) {
 
   return (
     <svg 
+    className="dash-svg"
       xmlns="http://www.w3.org/2000/svg" 
       width={`${calculatedWidth}px`} 
       height={`${height}px`} 

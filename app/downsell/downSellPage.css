@@ -1,0 +1,132 @@
+.hero-content {margin-top: 20px;}
+.text-container p {margin: 5px 0;}
+.text-container {background: var(--white-opaque-2); max-width: 20vw; padding: 15px; border-radius: 5px; min-height: 90px; margin: 0 10px 10px 0; min-width: 400px;}
+.downsell-nav-container {backdrop-filter: blur(10px);  position: fixed; top: 0; z-index: 100;}
+.downsell-nav {transition: all 1s ease; padding: 5px; border-radius: 5px; margin: 1.5vw 0 1.5vw 4vw;}
+.downsell-nav-link {transition: all 1s ease; background: var(--white-opaque)}
+.loader-square { margin: 0 5px;  height: 40px; max-height: 40px; border-radius: 2px;}
+.loader-squares-wrapper{overflow-x: scroll; }
+.icon-logo-wrapper {opacity: 0;}
+.icon-logo-wrapper {height: 50px; max-height: 50px; max-width: 60px!important; margin-right: 10px; background-image: url('/Devslopes-Logo-Icon-WhiteOutline.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;}
+.loader-square-text {border: unset; background: unset; width: 100%; min-width: 180px; max-height: 40px; font-family: var(--roboto-mono); text-transform: uppercase; color: black;  }
+.loader-square-text:hover {border: unset; font-weight: 700;}
+
+
+.sun-burst {min-height: 450px; width: 450px; margin-top: 50px;}
+.sun-rotate-center{-webkit-animation:rotate-center 20s linear infinite both;animation:rotate-center 20s linear infinite both}
+ @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+
+ /* Character Cards */
+ .character-card { border-radius: 10px; background: var(--navy); max-width: 90vw; }
+.box-section-aqua {border: 2px solid aqua; box-shadow: 4px 4px 0 aqua;}
+.box-section-pink {border: 2px solid var(--pink); box-shadow: 4px 4px 0 var(--pink);}
+
+/* StatCard */
+.stat-card {border-radius: 10px; background: var(--navy); width: 300px; padding: 15px; margin: 0 15px 15px 0;}
+.stat-card * {font-size: 14px}
+  
+@media screen and (max-width: 650px) {
+    .character-card-content {flex-direction: column; align-items: center;}
+    .character-card-text {order: 0;}
+    .character-image-wrapper {order: 1;}
+   
+  }
+
+  /* Work Harder */
+.card-wrapper {width: 30vw; min-width: 350px;}
+.sunburst-rotating-div {width: 100%; max-width: 30vw; min-width: 300px; aspect-ratio: 1; background-image: url('/DownsellPage/sun.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;}
+.sun-rotate-center{-webkit-animation:rotate-center 20s linear infinite both;animation:rotate-center 20s linear infinite both}
+ @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+@media screen and (max-width: 650px) {
+    
+    .card-wrapper {width: 100%; min-width: unset;}
+  }
+  @keyframes dropBounce {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(300px);}
+    70% { transform: translateY(280px); }
+    80% { transform: translateY(300px); }
+    90% { transform: translateY(290px); }
+    100% { transform: translateY(300px); }
+  }
+  
+  .bounce-animation {
+    animation: dropBounce 0.5s ease-out forwards;
+  }
+
+.feedback-container {padding: 15px; background-color: var(--navy); margin: 25px; min-width: 300px; border-radius: 5px}
+.feedback-avatar {width: 100px; height: 100px; border-radius: 50%; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: var(--white-opaque); min-width: 100px; min-height: 100px; margin-right: 15px;}
+.feedback-message {color: black; text-align: center;}
+.feedback-column {width: 30vw;  padding: 10px;}
+@media screen and (max-width: 650px) {
+    
+    .feedback-column {width: 100%;}
+   
+  }
+
+  @media screen and (max-width: 950px) {
+    .feedback-column {width: 100%;}
+    .feedback-column-wrapper {flex-direction: column;}
+  }
+
+  .conversation-container { 
+    display: flex; 
+    background: var(--navy); 
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column; 
+    gap: 20px;
+  }
+  
+  .message-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+   
+  }
+  
+  .sender1 {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .sender1 .message-content {
+    background: #2f3136;
+    color: #dcddde;
+    border-radius: 8px 8px 8px 0;
+  }
+  
+  .sender2 {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .sender2 .message-content {
+    background: #40444b;
+    color: #dcddde;
+    border-radius: 8px 8px 0 8px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .message-content {
+    padding: 10px 15px;
+    line-height: 1.4;
+  }
+  
+  .sender-name {
+    color: #b9bbbe;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .message-text {
+    margin: 0;
+    font-size: 14px;
+  }
+  
