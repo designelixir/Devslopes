@@ -88,7 +88,7 @@
 .character-feedback-card {background: var(--navy); width: calc(100% - 50px); margin: 25px; border-radius: 5px;}
 
 .big-meteor {
-    width: 100%; height: 100%; background-image: url('/DownsellPage/meteor.svg'); background-size: contain; background-position: center center; background-repeat: no-repeat; border: 1px solid red;
+    width: 100%; height: 100%; background-image: url('/DownsellPage/meteor.svg'); background-size: contain; background-position: center center; background-repeat: no-repeat; 
 }
 .big-meteor-grid-wrapper { height: 50%;}
 .big-meteor-grid {width: 50%; height: 100%;}
@@ -104,6 +104,3 @@
     animation: spaceDrift 16s ease infinite;
   }
   
-  .scale {transform: scale(10)}
-  .zoom-text {height: 70vh; transform: scale(0.033); position: absolute; width: 100%; border: 1px solid blue;}
-  .d-alone {}
