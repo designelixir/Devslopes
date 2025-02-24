@@ -12,7 +12,8 @@ const Sections = [
   { title: "Welcome", link: "Welcome", scrollTrigger: true, linkType: "#" },
   { title: "The Problem", link: "TheProblem", scrollTrigger: true, linkType: "#" },
   { title: "Why Devslopes?", link: "WhyDevslopes", scrollTrigger: true, linkType: "#" },
-  { title: "Bizop", link: "BizOp", scrollTrigger: true, linkType: "#" }
+  { title: "Bizop", link: "BizOp", scrollTrigger: true, linkType: "#" },
+  { title: "Success Stories", link: "SuccessStories", scrollTrigger: true, linkType: "#" }
 ];
 
 

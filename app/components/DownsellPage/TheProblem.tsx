@@ -54,6 +54,7 @@ export default function TheProblem() {
                     His fridge is empty. His rent is past due. The bills? He&apos;s lost track.
                     Every day, he dreams of escape—of walking barefoot on a Hawaiian beach, laptop open, finally in control of his life.<br></br> But dreams don&apos;t pay rent.</p>
                     <p className="g-john">Then, one day, after years of loyalty, he makes a small mistake on the machine. And just like that—</p>
+                    
                     <h3 className="h-john phase-message font-l"><strong className="yellow-text">He&apos;s fired.</strong></h3>
                 </div>
                 </div>

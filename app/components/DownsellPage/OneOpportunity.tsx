@@ -9,7 +9,7 @@ export default function OneOpportunity(){
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".section-4-sticky",
-            start: "top top",
+            start: "top -100",
             end: "bottom 100",
             scrub: 1,
             pin: true
@@ -17,7 +17,7 @@ export default function OneOpportunity(){
         });
       
         // .a-opportunity animation with ScrollTrigger
-        tl.fromTo(".a-opportunity", { opacity: 0 }, { opacity: 1, duration: 2 });
+        
         tl.fromTo(".meteor-single", {animation: 'unset'}, {animation: "dropBounce 0.5s ease-out forwards"})
         tl.fromTo(".b-opportunity", { opacity: 0 }, { opacity: 1, duration: 2 });
         tl.fromTo(".c-opportunity", { opacity: 0 }, { opacity: 1, duration: 2 }, "+=0.5");

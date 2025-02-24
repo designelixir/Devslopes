@@ -3,7 +3,7 @@
 .archivo {font-family: "Archivo", serif;}
 .roboto-mono {font-family: "Roboto Mono", monospace;}
 
-* {box-sizing:border-box; scroll-behavior: smooth; scroll-snap-type: proximity;}
+* {box-sizing:border-box; scroll-behavior: smooth; scroll-snap-type: proximity; font-family: var(--archivo);}
 html {max-width: 100vw; overflow-x: hidden;}
 body {width: 100%; margin: 0px; z-index: 1;}
 
@@ -37,6 +37,7 @@ body {width: 100%; margin: 0px; z-index: 1;}
 .pink-text {color: var(--pink);}
 .yellow-text {color: var(--yellow);}
 .aqua-text {color: aqua;}
+.production-note {color: lime; font-size: 14px;}
 /* Deep Purple */
 .deep-purple-text { color: var(--deep-purple); }
 .box-section-deep-purple { border: 2px solid var(--deep-purple); box-shadow: 4px 4px 0 var(--deep-purple); }
@@ -101,7 +102,10 @@ body {width: 100%; margin: 0px; z-index: 1;}
 .basic-padding-left-right {padding: 0 5vw;}
 .basic-padding-top-bottom {padding: 5vw 0;}
 
+.section-margin-top {margin-top: 100px!important;}
+
 .basic-margin {margin: 5vw;}
+.basic-margin-top {margin-top: 5vw;}
 .basic-margin-left-right {margin: 0 5vw;}
 .basic-margin-top-bottom {margin: 5vw 0;}
 .basic-margin-top {margin-top: 5vw;}
@@ -156,7 +160,7 @@ button:hover {cursor: pointer; border: 2px solid white;}
 .rotate-center{-webkit-animation:rotate-center 30s ease-in-out infinite both;animation:rotate-center 30s ease-in-out infinite both}
  @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 
-#particles-js {position: fixed; opacity: 0.5; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;}
+#particles-js {position: fixed; opacity: 0.25; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;}
 
 /* Other component styling */
 

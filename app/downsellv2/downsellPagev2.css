@@ -1,0 +1,114 @@
+.downsell-nav-container {backdrop-filter: blur(10px); width: 99vw;  position: fixed; top: 0; z-index: 100;}
+.downsell-nav {transition: all 1s ease; padding: 5px; border-radius: 5px; margin: 1.5vw 0 0.5vw 4vw;}
+.downsell-nav-link {transition: all 1s ease; background: var(--white-opaque)}
+.loader-square { margin: 0 5px;  height: 40px; max-height: 40px; border-radius: 2px;}
+.loader-squares-wrapper{overflow-x: scroll; }
+.icon-logo-wrapper {opacity: 0;}
+.icon-logo-wrapper {height: 50px; max-height: 50px; max-width: 60px!important; margin-right: 10px; background-image: url('/Devslopes-Logo-Icon-WhiteOutline.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;}
+.loader-square-text {border: unset; background: unset; width: 100%; min-width: 180px; max-height: 40px; font-family: var(--roboto-mono); text-transform: uppercase; color: black;  }
+.loader-square-text:hover {border: unset; font-weight: 700;}
+
+.text-container p {margin: 5px 0;}
+.text-container {background: var(--white-opaque-2);  padding: 15px; border-radius: 5px; min-height: 90px; margin: 10px; width: calc(100% - 20px)}
+@media screen and (max-width: 680px) {
+    .text-container-wrapper {flex-direction: column;}
+    
+  }
+  
+ /* Character Cards */
+ .character-card { border-radius: 10px; background: var(--navy); max-width: 90vw; }
+.box-section-aqua {border: 2px solid aqua; box-shadow: 4px 4px 0 aqua;}
+.box-section-pink {border: 2px solid var(--pink); box-shadow: 4px 4px 0 var(--pink);}
+
+#John .character-image-wrapper {align-items: stretch; border-bottom-left-radius: 8px; margin-bottom: 0px;  margin-left: 0;}
+@media screen and (max-width: 900px) {
+   #John {align-items: flex-start;}
+
+    #John {flex-direction: column;}
+  }
+
+/* StatCard */
+.stat-card {border-radius: 10px; background: var(--navy); width: 300px; padding: 15px; margin: 0 15px 15px 0;}
+.stat-card * {font-size: 14px}
+  
+
+@media screen and (max-width: 650px) {
+    .character-card-content {flex-direction: column; align-items: center;}
+    .character-card-text {order: 0;}
+    .character-image-wrapper {order: 1;}
+    .john-card-content {flex-direction: column;}
+    .john-card-content .character-image-wrapper {margin-left: -2.5vw;}
+  }
+  .sunburst-rotating-div {width: 100%; position: absolute; z-index: -1; max-width: 30vw; min-width: 300px; aspect-ratio: 1; background-image: url('/DownsellPage/sun.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;}
+  .sun-rotate-center{-webkit-animation:rotate-center 20s linear infinite both;animation:rotate-center 20s linear infinite both}
+   @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+  
+   @keyframes dropBounce {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(300px);}
+    70% { transform: translateY(280px); }
+    80% { transform: translateY(300px); }
+    90% { transform: translateY(290px); }
+    100% { transform: translateY(300px); }
+  }
+
+
+.feedback-container {padding: 15px; background-color: var(--navy); margin: 25px; min-width: 300px; border-radius: 5px; width: calc(100% - 50px);}
+.feedback-avatar {width: 100px; height: 100px; border-radius: 50%; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: var(--white-opaque); min-width: 100px; min-height: 100px;}
+.feedback-message { text-align: center;}
+.feedback-column {width: 30vw;  padding: 10px;}
+@media screen and (max-width: 650px) {
+    .feedback-column {width: 100%;} 
+  }
+
+  @media screen and (max-width: 950px) {
+    .feedback-column {width: 100%;}
+    .feedback-column-wrapper {flex-direction: column;}
+  }
+
+  .conversation-container { display: flex; background: var(--navy);  padding: 10px; border-radius: 5px; flex-direction: column; gap: 20px;}
+  .message-group {display: flex; align-items: flex-start; gap: 10px;}
+  .sender1 {flex-direction: row;text-align: left;}
+  .sender1 .message-content {background: #2f3136; color: #dcddde; border-radius: 8px 8px 8px 0;}
+  .sender2 {flex-direction: row-reverse; text-align: right;}
+  .sender2 .message-content {background: #40444b; color: #dcddde; border-radius: 8px 8px 0 8px;}
+  .avatar {border-radius: 50%; flex-shrink: 0;}
+  .message-content {padding: 10px 15px; line-height: 1.4;}
+  .sender-name {color: #b9bbbe; font-size: 12px; margin-bottom: 4px;}
+  .message-text {margin: 0; font-size: 14px;}
+  
+
+  .character-card-avatar {width: 50px; height: 50px; border-radius: 50%; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: var(--white); min-width: 50px; min-height: 50px;
+    position: absolute; margin-top: -15px; margin-left: -15px;
+}
+.character-card-message {padding: 15px 25px;}
+.character-feedback-card {background: var(--navy); width: calc(100% - 50px); margin: 25px; border-radius: 5px;}
+@keyframes spaceDrift {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    25% { transform: translateX(10px) translateY(-5px) rotate(-2deg); }
+    50% { transform: translateX(0) translateY(-10px) rotate(0deg); }
+    75% { transform: translateX(-10px) translateY(-5px) rotate(2deg); }
+    100% { transform: translateX(0) translateY(0) rotate(0deg); }
+  }
+  
+  .space-drift {
+    animation: spaceDrift 16s ease infinite;
+  }
+  
+  .student {background-size: contain; background-repeat: no-repeat; background-position: center;}
+
+  .student-1 {background-image: url('/DownsellPage/student-1.svg'); width: 10vw; height: 10vw;}
+  .student-2 {background-image: url('/DownsellPage/student-2.svg'); width: 10vw; height: 10vw;}
+  .student-3 {background-image: url('/DownsellPage/student-3.svg'); width: 10vw; height: 10vw;}
+  .student-4 {background-image: url('/DownsellPage/students-6.svg'); width: 30vw; height: 20vw;}
+  .student-5 {background-image: url('/DownsellPage/student-5_1.svg'); width: 10vw; height: 20vw;}
+  .student-6 {background-image: url('/DownsellPage/student-6.svg'); width: 20vw; height: 20vw;}
+  .student-7 {background-image: url('/DownsellPage/student-7.svg'); width: 20vw; height: 20vw;}
+  .student-8 {background-image: url('/DownsellPage/student-8.svg'); width: 30vw; height: 20vw;}
+  .student-9 {background-image: url('/DownsellPage/student-9.svg'); width: 30vw; height: 20vw;}
+  .student-10 {background-image: url('/DownsellPage/student-10.svg'); width: 30vw; height: 20vw;}
+
+  .graph {max-width: 30vw; min-width: 300px; width: 100%;}
+  .student-story {width: 80vw; margin-bottom: 50px;}
+
+  .meteor-background {border: 1px solid red; height: 100%; width: 100%; position: absolute; z-index: -1;}

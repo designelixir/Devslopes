@@ -1,9 +1,9 @@
-import Stars from "../components/Stars";
+import Stars from "../components/DownsellPagev2/Stars";
 import "./downSellPage.css";
 import WorkHarder from "../components/DownsellPage/WorkHarder";
 import MeetNathan from "../components/DownsellPage/MeetNathan";
 import MeetDevslopes from "../components/DownsellPage/MeetDevslopes";
-import Loader from "../components/DownsellPage/Loader";
+import Loader from "../components/DownsellPagev2/Loader";
 import Hero from "../components/DownsellPage/Hero";
 import TheProblem from "../components/DownsellPage/TheProblem";
 import OneOpportunity from "../components/DownsellPage/OneOpportunity";

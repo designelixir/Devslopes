@@ -35,6 +35,7 @@ export default function MeetDevslopes(){
                 
                 <p className="font-m centered-text a-meetdevslopes"> You can&apos;t get the job without experience, but you can&apos;t get experience without the job.<br></br> <span className="bold">We solved that problem.</span></p>
                 <p><i>See real messages from our students, sent while amidst the Devslopes course.</i></p>
+                
                 <div className="feedback-column-wrapper  a-meetdevslopes flex-start-start flex-column">
                 <Feedback message="1 just got two more jobs: one landing page for $150 to deliver on Monday, and another landing page for $500 to deliver in two weeks. Thank you for your support!" color="blue" name="Bill Rodrigo" image="./DownsellPage/outline.svg"></Feedback>
                 <Conversation 
